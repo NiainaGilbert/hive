@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>mg.niaina.gilbert</groupId>
+    <artifactId>hive-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>hive-web</artifactId>
+  <packaging>war</packaging>
+  <dependencies>
+    <dependency><groupId>mg.niaina.gilbert</groupId><artifactId>hive-domain</artifactId></dependency> <dependency><groupId>mg.niaina.gilbert</groupId><artifactId>hive-algo</artifactId></dependency> <dependency><groupId>mg.niaina.gilbert</groupId><artifactId>hive-sim</artifactId></dependency> <dependency><groupId>mg.niaina.gilbert</groupId><artifactId>hive-core</artifactId></dependency> <dependency><groupId>mg.niaina.gilbert</groupId><artifactId>hive-dashboard</artifactId></dependency>
+    <dependency><groupId>jakarta.servlet</groupId><artifactId>jakarta.servlet-api</artifactId></dependency> <dependency><groupId>jakarta.websocket</groupId><artifactId>jakarta.websocket-api</artifactId></dependency> <dependency><groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter</artifactId></dependency>
+  </dependencies>
+  <build>
+    <finalName>hive-web</finalName>
+    <plugins><plugin>
+      <artifactId>maven-war-plugin</artifactId>
+      <configuration><failOnMissingWebXml>false</failOnMissingWebXml></configuration>
+    </plugin></plugins>
+  </build>
+</project>
